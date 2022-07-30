@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 
-const UseTool = () =>{
-
+const UseProduct = () =>{
     const [tools, setTools] = useState([])
 
     useEffect(() => {
@@ -9,6 +8,6 @@ const UseTool = () =>{
             .then(res => res.json())
             .then(data => setTools(data))
     }, [])
-    return [tools]
+    return [tools, setTools]
 }
-export default UseTool
+export default UseProduct

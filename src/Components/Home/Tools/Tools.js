@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Tool from './Tool';
 import { Link } from 'react-router-dom';
+import UseProduct from '../../Shared/Hook/UseProduct';
 
 const Tools = () => {
-    const [tools, setTools] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:5000/tool')
-            .then(res => res.json())
-            .then(data => setTools(data))
-    }, [])
-    // const [tools] = UseTool()
+    
+    const [tools, setTools] = UseProduct()
     return (
         <div>
             <h1 className="text-2xl mb-10 text-center">Our tools</h1>

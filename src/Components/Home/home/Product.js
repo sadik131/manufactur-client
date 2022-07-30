@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Product = ({ product }) => {
-    const { name, img, discription, price } = product
+const Product = ({  tool }) => {
+    const { name, img, discription, price } = tool
 
     const handelProduct = (product) =>{
         console.log(product);
@@ -14,7 +14,7 @@ const Product = ({ product }) => {
                 <p className='text-base text-center'>{discription}</p>
                 <p className='text-xl font-medium text-center'>price: ${price}</p>
                 <div className="card-actions justify-center">
-                    <button onClick={() =>handelProduct(product)} className="btn btn-primary">Buy Now</button>
+                    <button onClick={() =>handelProduct(tool)} className="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>
