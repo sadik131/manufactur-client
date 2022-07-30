@@ -31,7 +31,7 @@ const Booking = ({ product, number , setBooking}) => {
             totalItem: number
         }
         
-        fetch('http://localhost:5000/product' ,{
+        fetch('https://lit-harbor-16430.herokuapp.com/product' ,{
             method:"POST",
             headers:{
                 "content-type": "application/json"

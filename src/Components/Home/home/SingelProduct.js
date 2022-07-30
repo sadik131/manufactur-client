@@ -11,7 +11,7 @@ const SingelProduct = () => {
     const [booking, setBooking] = useState(null)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/tool/${id}`)
+        fetch(`https://lit-harbor-16430.herokuapp.com/tool/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id])
