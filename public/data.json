@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Bike Engine",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quae in, quo aut, ut molestias earum alias deleniti quos tempora soluta voluptatum eveniet! Doloremque id iste consequatur inventore nulla neque est quidem, ex ipsam dolores?",
+        "img":"https://i.ibb.co/mRGYdZ5/bike-Engin.jpg",
+        "price":"$1500",
+        "avalable":"2000"
+    },
+    {
+        "name": "Car Engine",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quae in, quo aut, ut molestias earum alias deleniti quos tempora soluta voluptatum eveniet! Doloremque id iste consequatur inventore nulla neque est quidem, ex ipsam dolores?",
+        "img":"https://i.ibb.co/BP8Bsh9/enjin.png",
+        "price":"$1100",
+        "avalable":"1000"
+    },
+    {
+        "name": "Cycle Gear",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quae in, quo aut, ut molestias earum alias deleniti quos tempora soluta voluptatum eveniet! Doloremque id iste consequatur inventore nulla neque est quidem, ex ipsam dolores?",
+        "img":"https://i.ibb.co/khs7n4H/gear.jpg",
+        "price":"$15",
+        "avalable":"1500"
+    },
+    {
+        "name": "Tools",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quae in, quo aut, ut molestias earum alias deleniti quos tempora soluta voluptatum eveniet! Doloremque id iste consequatur inventore nulla neque est quidem, ex ipsam dolores?",
+        "img":"https://i.ibb.co/h7xbkVv/istockphoto-488965597-170667a.jpg",
+        "price":"$25",
+        "avalable":"2500"
+    },
+    {
+        "name": "Oil",
+        "discription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quae in, quo aut, ut molestias earum alias deleniti quos tempora soluta voluptatum eveniet! Doloremque id iste consequatur inventore nulla neque est quidem, ex ipsam dolores?",
+        "img":"https://i.ibb.co/ZXq7XtC/oil.jpg",
+        "price":"$10",
+        "avalable":"1000"
+    }
+]
