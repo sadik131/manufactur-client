@@ -14,16 +14,19 @@ const Nav = () => {
 
   const navlink = <>
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/dashbord">Dashbord</Link></li>
     <li><Link to="/about">About Us</Link></li>
+    <li><Link to="">Blog</Link></li>
     {user ? 
+    <>
+    <li><Link to="/dashbord">Dashbord</Link></li>
     <li><Link onClick={handelSingout} to="/login">Signout</Link></li>
+    </>
     :
     <li><Link to="/login">Login</Link></li>}
   </>
 
   return (
-    <div className="navbar bg-base-300 ">
+    <div className="navbar bg-base-300">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -33,7 +36,7 @@ const Nav = () => {
             {navlink}
           </ul>
         </div>
-        <Link to='/' className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+        <Link to='/' className="btn btn-ghost normal-case text-xl">Manufacturing</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">

@@ -22,20 +22,20 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
-        <Route path='/dashbord' element={<Dashbord></Dashbord>}>
-          <Route path='/dashbord/user' element={<User></User>}></Route>
-          <Route path='/dashbord/order' element={<Order></Order>}></Route>
-        </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singin' element={<Singin></Singin>}></Route>
         <Route path='/product' element={<Products></Products>}></Route>
         <Route path='/chackOut' element={<ChackOut></ChackOut>}></Route>
+        <Route path='/dashbord' element={<Dashbord></Dashbord>}>
+          <Route path='user' element={<User></User>}></Route>
+          <Route path='order' element={<Order></Order>}></Route>
+        </Route>
         <Route path='/sProduct/:id' element={<RequireAuth>
           <SingelProduct></SingelProduct>
         </RequireAuth>}></Route>
       </Routes>
       <Footer></Footer>
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 }

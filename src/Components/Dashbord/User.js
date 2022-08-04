@@ -5,7 +5,7 @@ import UserRow from './Row/UserRow';
 
 const User = () => {
     
-    const {data: users, isLoading , isError} = useQuery(['user'], () =>fetch('https://lit-harbor-16430.herokuapp.com/user' ,{
+    const {data: users, isLoading , isError , refetch} = useQuery(['user'], () =>fetch('https://lit-harbor-16430.herokuapp.com/user' ,{
         method:"GET",
         headers:{
             "authorization" : `Bearer ${localStorage.getItem("accessToken")}`
@@ -18,8 +18,8 @@ const User = () => {
     return (
         <div>
             <div className="overflow-auto">
+                <h1 className="text-2xl text-primary">Our total use: {users.length}</h1>
                 <table className="table w-full">
-                    
                     <thead>
                         <tr>
                             <th>No</th>
@@ -35,6 +35,7 @@ const User = () => {
                             key={index}
                             user={user}
                             index={index}
+                            refetch={refetch}
                             ></UserRow>)
                         }
                     </tbody>
