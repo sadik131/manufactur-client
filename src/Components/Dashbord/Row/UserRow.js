@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const UserRow = ({ user, index , refetch}) => {
     const {_id, email , roll} = user
@@ -21,6 +22,7 @@ const UserRow = ({ user, index , refetch}) => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
+            toast("User delete Successfully")
             refetch()
         })
         

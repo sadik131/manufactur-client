@@ -8,7 +8,12 @@ const Order = () => {
     const [user] = useAuthState(auth);
     const email = user?.email
 
-    const { data: order, isLoading } = useQuery(['order'], () => fetch(`http://localhost:5000/order?user=${email}`).then(res => res.json()))
+    const { data: order, isLoading } = useQuery(['order'], () => fetch(`http://localhost:5000/order?user=${email}`, {
+        method: "GET",
+        headers: {
+            "authorization": `Bearer ${localStorage.getItem("accessToken")}`
+        },
+    }).then(res => res.json()))
 
     if (isLoading) {
         return <Loading></Loading>
@@ -19,7 +24,7 @@ const Order = () => {
             <h1 className="text-2xl">My order List : {order?.length}</h1>
             <div class="overflow-x-auto">
                 <table class="table w-full">
-                    
+
                     <thead>
                         <tr>
                             <th>No</th>
@@ -29,14 +34,14 @@ const Order = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        
+
                         <tr>
                             <th>1</th>
                             <td>Cy Ganderton</td>
                             <td>Quality Control Specialist</td>
                             <td>Blue</td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
             </div>

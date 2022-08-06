@@ -17,7 +17,7 @@ const Tools = () => {
                     ></Tool>)
                 }
             </div>
-            <Link to="/product" className='text-blue-600 cursor-pointer underline text-center'>See More</Link>
+            {tools && <Link to="/products" className='text-blue-600 cursor-pointer underline text-center'>See More</Link>}
         </div>
     );
 };

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import UseProduct from '../../Shared/Hook/UseProduct';
 import Product from './Product';
 
 const Products = () => {
     
     const [tools, setTools] = UseProduct()
-    
+    console.log(tools);
     return (
         <div>
             <h1 className="text-5xl text-primary text-center uppercase">Our All Products</h1>
