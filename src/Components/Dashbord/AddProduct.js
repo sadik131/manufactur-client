@@ -28,7 +28,7 @@ const AddProduct = () => {
                     price:data.number
                 }
                 console.log(product);
-                fetch('http://localhost:5000/tool',{
+                fetch('https://lit-harbor-16430.herokuapp.com/tool',{
                     method:'POST',
                     headers:{
                         'content-type':"application/json",

@@ -24,12 +24,14 @@ const Booking = ({ product, number , setBooking}) => {
         console.log();
         const info ={
             name:e.target.name.value,
+            productName:name,
             email:e.target.email.value,
             number:e.target.number.value,
             address:e.target.address.value,
             price: subTotal,
             totalItem: number
         }
+        console.log(info);
         
         fetch('https://lit-harbor-16430.herokuapp.com/product' ,{
             method:"POST",

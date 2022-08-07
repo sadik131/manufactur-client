@@ -6,7 +6,6 @@ import Booking from './Booking';
 const SingelProduct = () => {
 
     const { id } = useParams()
-    const navigate = useNavigate()
     const [product, setProduct] = useState({})
     const [booking, setBooking] = useState(null)
 

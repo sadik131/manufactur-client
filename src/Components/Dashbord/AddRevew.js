@@ -26,7 +26,7 @@ const AddRevew = () => {
                     message:data.textarea,
                     review:data.review
                 }
-            fetch('http://localhost:5000/revew',{
+            fetch('https://lit-harbor-16430.herokuapp.com/revew',{
                 method:"POST",
                  headers:{
                 "content-type":"application/json",
