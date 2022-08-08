@@ -12,7 +12,9 @@ const UserRow = ({ user, index , refetch}) => {
             },
         })
         .then(res =>res.json())
-        .then(data =>console.log(data))
+        .then(data =>{
+            toast('Use make admin Successfully')
+        })
     };
 
     const DeleteUser = id =>{
@@ -21,7 +23,6 @@ const UserRow = ({ user, index , refetch}) => {
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data)
             toast("User delete Successfully")
             refetch()
         })

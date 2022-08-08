@@ -16,7 +16,7 @@ const SingelProduct = () => {
     }, [id])
     
 
-    const [number, setNumber] = useState(1)
+    const [number, setNumber] = useState(4)
     const [error, setError] = useState('')
 
     const handelIncrise = () => {
@@ -26,6 +26,11 @@ const SingelProduct = () => {
     const handelDicrise = () => {
         setNumber(number - 1)
     };
+
+    if(number < 4 ){
+        setError("minimum add 4")
+        return
+    }
 
     return (
         <div className="card  bg-base-100 shadow-xl">
@@ -42,12 +47,12 @@ const SingelProduct = () => {
                         <div className='flex justify-between items-center'>
 
                             <div className='flex justify-between items-center border border-purple-400 w-24 h-7 '>
-                                <p onClick={handelDicrise} className='flex justify-center h-full bg-purple-500 cursor-pointer text-white'>-</p>
+                                <p onClick={handelDicrise} className='px-2 lg:px-0 flex justify-center h-full bg-purple-500 cursor-pointer text-white'>-</p>
                                 <p className='ml-3'>{number}</p>
-                                <p onClick={handelIncrise} className='flex justify-center h-full bg-purple-500 cursor-pointer text-white'>+</p>
-
+                                <p onClick={handelIncrise} className='px-2 lg:px-0 flex justify-center h-full bg-purple-500 cursor-pointer text-white'>+</p>
+{error}
                             </div>
-                            <label onClick={() =>setBooking(product)} htmlFor="Booking-Modal" className="btn modal-button">Booking Now</label>
+                            <label onClick={() =>setBooking(product)} htmlFor="Booking-Modal" className="btn modal-button ml-20">Booking Now</label>
                             
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
 
 const AddRevew = () => {
 
@@ -36,7 +37,8 @@ const AddRevew = () => {
             })    
             .then(res =>res.json())
             .then(data =>{
-                console.log(data);
+                toast(`${data.message}`)
+                reset()
             })
             }
         })

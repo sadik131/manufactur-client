@@ -42,9 +42,8 @@ const Booking = ({ product, number , setBooking}) => {
         })
         .then(res =>res.json())
         .then(data =>{
-            console.log(data)
             setBooking(null)
-            toast("Your Product parcess successfully chack on Dhashbord")
+            toast(`Your Product parcess successfully check on Dhashbord`)
         })
     }
 
