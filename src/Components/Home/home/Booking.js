@@ -56,7 +56,7 @@ const Booking = ({ product, number , setBooking}) => {
                     <h3 className="font-bold text-lg text-center">{name}</h3>
                     <div className='flex justify-between'>
                         <h1 className='text-xl'>price</h1>
-                        <h1 className='text-xl'>{price}</h1>
+                        <h1 className='text-xl'>${price}</h1>
                     </div>
                     <div className='flex justify-between'>
                         <h1 className='text-xl'>item</h1>
@@ -65,7 +65,7 @@ const Booking = ({ product, number , setBooking}) => {
                     <hr />
                     <div className='flex justify-between'>
                         <h1 className='text-xl font-semibold'>Subtotal</h1>
-                        <h1 id='#total' className='text-xl font-semibold'>{subTotal}</h1>
+                        <h1 id='#total' className='text-xl font-semibold'>${subTotal}</h1>
                     </div>
                     <form onSubmit={handelFormSubmit}>
                     <input type="text" name='name' value={user.displayName} disabled className="input mt-5 input-bordered input-accent w-full " />

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import Booking from './Booking';
 
 
@@ -18,6 +18,7 @@ const SingelProduct = () => {
 
     const [number, setNumber] = useState(4)
     const [error, setError] = useState('')
+    // console.log(error);
 
     const handelIncrise = () => {
         setNumber(number + 1)
@@ -27,10 +28,10 @@ const SingelProduct = () => {
         setNumber(number - 1)
     };
 
-    if(number < 4 ){
-        setError("minimum add 4")
-        return
-    }
+    // if(number < 4 ){
+    //     setError("minimum add 4")
+    //     return
+    // }
 
     return (
         <div className="card  bg-base-100 shadow-xl">
@@ -50,7 +51,7 @@ const SingelProduct = () => {
                                 <p onClick={handelDicrise} className='px-2 lg:px-0 flex justify-center h-full bg-purple-500 cursor-pointer text-white'>-</p>
                                 <p className='ml-3'>{number}</p>
                                 <p onClick={handelIncrise} className='px-2 lg:px-0 flex justify-center h-full bg-purple-500 cursor-pointer text-white'>+</p>
-{error}
+{/* <p>{error}</p> */}
                             </div>
                             <label onClick={() =>setBooking(product)} htmlFor="Booking-Modal" className="btn modal-button ml-20">Booking Now</label>
                             

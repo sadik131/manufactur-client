@@ -5,7 +5,7 @@ const OrderRow = ({ order, index }) => {
     const navigate = useNavigate()
 
     const paymentPage = ( id ) =>{
-        navigate(`/dashbord/payment/${id}`)
+        // navigate(`/dashbord/payment/${id}`)
     }
 
     const { productName, totalItem, price , _id } = order

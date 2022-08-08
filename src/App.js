@@ -20,7 +20,7 @@ import Payment from './Components/Dashbord/Payment';
 
 function App() {
   return (
-    <div className='ml-5 mr-5'>
+    <div className='sm:w-full lg:mx-5'>
       <Nav></Nav>
       <Routes>
         {
@@ -34,7 +34,7 @@ function App() {
           </RequerAdmin>}></Route>
           <Route path='order' element={<Order></Order>}></Route>
           <Route path='revew' element={<AddRevew></AddRevew>}></Route>
-          <Route path='payment/:id' element={<Payment></Payment>}></Route>
+          {/* <Route path='payment/:id' element={<Payment></Payment>}></Route> */}
           <Route path='profile' element={<Profile></Profile>}></Route>
           <Route path='addProduct' element={<RequerAdmin>
             <AddProduct></AddProduct>
